@@ -1,42 +1,68 @@
-/* style.css */
+/* Estilos generales */
 body {
-  font-family: sans-serif;
+  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background: #f4f4f4;
-  color: #333;
+  background: #111;
+  color: #eee;
+  line-height: 1.6;
 }
 
+/* Encabezado */
 header {
-  background: #333;
-  color: white;
+  background: #222;
+  color: #fff;
+  padding: 1rem;
   text-align: center;
-  padding: 2rem;
 }
 
+header h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 0.5rem;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #f39c12;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Secciones */
 section {
   padding: 2rem;
-  max-width: 800px;
-  margin: auto;
+  text-align: center;
 }
 
-h2 {
-  color: #444;
-  border-bottom: 2px solid #ccc;
+section img {
+  max-width: 300px;
+  margin-top: 1rem;
+  border-radius: 10px;
 }
 
-ul {
-  list-style-type: square;
+/* Footer */
+footer {
+  background: #222;
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: 2rem;
 }
 
-a {
-  color: #0077cc;
+footer a {
+  color: #f39c12;
   text-decoration: none;
 }
 
-footer {
-  text-align: center;
-  background: #eee;
-  padding: 1rem;
-  margin-top: 2rem;
-}
