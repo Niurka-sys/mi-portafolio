@@ -7,21 +7,31 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
+  <!-- Menú de navegación fijo -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#about">Sobre</a></li>
+      <li><a href="#videos">Videos</a></li>
+      <li><a href="#artists">Artistas</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <header id="inicio">
     <h1>Rock & Progressive House</h1>
     <p>Explora lo mejor del Rock y la música Electrónica Progressive House</p>
   </header>
 
-  <section class="about">
+  <section id="about" class="about">
     <h2>Sobre el Proyecto</h2>
     <p>Este sitio web reúne lo mejor de dos mundos: la energía del rock y la atmósfera envolvente del progressive house. Aquí encontrarás información, videos y referencias de artistas reconocidos.</p>
     <img src="https://images.unsplash.com/photo-1511379938547-c1f69419868d" alt="Concierto de música" />
   </section>
 
-  <section class="videos">
+  <section id="videos" class="videos">
     <h2>Videos Destacados</h2>
     <div class="video-container">
-      <!-- Nuevo video de Eric Prydz que funciona -->
       <iframe width="560" height="315" src="https://www.youtube.com/embed/luoJW9qZxq8" title="Eric Prydz - Opus (Progressive House)" frameborder="0" allowfullscreen></iframe>
     </div>
     <div class="video-container">
@@ -29,7 +39,7 @@
     </div>
   </section>
 
-  <section class="artists">
+  <section id="artists" class="artists">
     <h2>Artistas Recomendados</h2>
     <ul>
       <li><b>Progressive House:</b> Eric Prydz, Deadmau5, Sasha, John Digweed</li>
@@ -37,8 +47,9 @@
     </ul>
   </section>
 
-  <footer>
+  <footer id="contacto">
     <p>Proyecto creado por [Tu Nombre] | © 2025</p>
+    <p>Contacto: <a href="mailto:tuemail@ejemplo.com">tuemail@ejemplo.com</a></p>
   </footer>
 </body>
 </html>
