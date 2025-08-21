@@ -7,12 +7,23 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
+  <!-- 🔹 Menú de navegación -->
+  <nav>
+    <div class="logo">Rock & ProgHouse</div>
+    <ul>
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#videos">Videos</a></li>
+      <li><a href="#artistas">Artistas</a></li>
+    </ul>
+  </nav>
+
+  <header id="inicio">
     <h1>Rock & Progressive House</h1>
     <p>Explora lo mejor del Rock y la música Electrónica Progressive House</p>
   </header>
 
-  <section class="about">
+  <section id="sobre" class="about">
     <h2>Sobre el Proyecto</h2>
     <p>
       Este sitio web reúne lo mejor de dos mundos: la energía del rock y la atmósfera envolvente 
@@ -22,7 +33,7 @@
          alt="Concierto de música" />
   </section>
 
-  <section class="videos">
+  <section id="videos" class="videos">
     <h2>Videos Destacados</h2>
     <div class="video-container">
       <iframe width="560" height="315" 
@@ -38,9 +49,16 @@
         frameborder="0" allowfullscreen>
       </iframe>
     </div>
+    <div class="video-container">
+      <iframe width="560" height="315" 
+        src="https://www.youtube.com/embed/x-xTttimcNk" 
+        title="Pink Floyd - Comfortably Numb (Live at Pulse 1994)" 
+        frameborder="0" allowfullscreen>
+      </iframe>
+    </div>
   </section>
 
-  <section class="artists">
+  <section id="artistas" class="artists">
     <h2>Artistas Recomendados</h2>
     <ul>
       <li><b>Progressive House:</b> Eric Prydz, Deadmau5, Sasha, John Digweed</li>
@@ -53,4 +71,3 @@
   </footer>
 </body>
 </html>
-
