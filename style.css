@@ -1,113 +1,62 @@
-/* Estilos generales */
 body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background: #111;
-    color: #fff;
-    line-height: 1.6;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #121212;
+  color: #f1f1f1;
 }
 
-/* Header */
 header {
-    background: #222;
-    padding: 20px;
-    text-align: center;
+  background: linear-gradient(135deg, #e63946, #1d3557);
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
 }
+
 header h1 {
-    margin: 0;
-    font-size: 2.2rem;
-}
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-nav ul li a {
-    color: #ff4081;
-    text-decoration: none;
-    font-weight: bold;
-}
-nav ul li a:hover {
-    color: #00bcd4;
+  font-size: 2.5rem;
 }
 
-/* Secciones */
-.section {
-    padding: 50px 20px;
-    text-align: center;
-}
-.section h2 {
-    color: #ff4081;
-    margin-bottom: 20px;
-}
-.section img {
-    width: 70%;
-    border-radius: 10px;
-    margin-top: 20px;
+.about, .videos, .artists {
+  padding: 2rem;
+  text-align: center;
 }
 
-/* Cards de artistas */
-.cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    margin-top: 20px;
-}
-.card {
-    background: #222;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+.about img {
+  max-width: 100%;
+  margin-top: 1rem;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.5);
 }
 
-/* Videos */
 .videos {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 20px;
-    justify-content: center;
+  background: #1d1d1d;
 }
+
+.video-container {
+  margin: 1.5rem auto;
+  max-width: 560px;
+}
+
 iframe {
-    border: none;
-    border-radius: 10px;
+  width: 100%;
+  border-radius: 10px;
 }
 
-/* Contacto */
-form {
-    display: flex;
-    flex-direction: column;
-    max-width: 500px;
-    margin: auto;
-}
-form input, form textarea, form button {
-    margin: 10px 0;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-}
-form input, form textarea {
-    background: #333;
-    color: #fff;
-}
-form button {
-    background: #ff4081;
-    color: #fff;
-    font-weight: bold;
-    cursor: pointer;
-}
-form button:hover {
-    background: #00bcd4;
+.artists ul {
+  list-style: none;
+  padding: 0;
 }
 
-/* Footer */
+.artists li {
+  margin: 0.5rem 0;
+}
+
 footer {
-    background: #222;
-    text-align: center;
-    padding: 15px;
-    margin-top: 20px;
-    font-size: 0.9rem;
+  text-align: center;
+  padding: 1rem;
+  background: #222;
+  color: #aaa;
 }
+
