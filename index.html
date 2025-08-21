@@ -3,50 +3,173 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Música Rock & Electrónica</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <title>Rock Electrónico & Progressive House</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background-color: #0d0d0d;
+      color: #f0f0f0;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #111;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.5);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 20px;
+      color: #00ffcc;
+    }
+
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #f0f0f0;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #00ffcc;
+    }
+
+    section {
+      padding: 100px 20px 60px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #00ffcc;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #00ffcc;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    .artists {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .artist {
+      background: #1a1a1a;
+      padding: 15px;
+      border-radius: 10px;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .artist:hover {
+      transform: scale(1.05);
+    }
+
+    .artist img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+
+    iframe {
+      width: 100%;
+      height: 315px;
+      border-radius: 10px;
+      border: none;
+      margin-bottom: 20px;
+    }
+
+    footer {
+      background: #111;
+      color: #aaa;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
 </head>
 <body>
+
+  <!-- NAVBAR -->
   <header>
-    <h1>🎶 Música Rock & Electrónica</h1>
+    <h1>🎵 Rock Electrónico & Progressive House</h1>
     <nav>
-      <a href="#rock">Rock</a>
-      <a href="#electronica">Electrónica</a>
-      <a href="#progressive">Progressive House</a>
+      <a href="#historia">Historia</a>
+      <a href="#artistas">Artistas</a>
+      <a href="#videos">Videos</a>
+      <a href="#playlist">Playlist</a>
     </nav>
   </header>
 
-  <main>
-    <section id="rock" class="card">
-      <h2>🎸 Rock</h2>
-      <p>El rock es un género musical nacido en los años 50 que combina ritmo, guitarra eléctrica y energía. Bandas como <strong>The Beatles</strong>, <strong>Queen</strong> y <strong>Led Zeppelin</strong> marcaron la historia.</p>
-      <iframe width="100%" height="315" src="https://www.youtube.com/embed/fJ9rUzIMcZQ" frameborder="0" allowfullscreen></iframe>
-    </section>
+  <!-- SECCIÓN HISTORIA -->
+  <section id="historia">
+    <h2>Historia</h2>
+    <p>
+      El <strong>Rock Electrónico</strong> y el <strong>Progressive House</strong> son géneros que fusionan guitarras,
+      sintetizadores y beats electrónicos. Mientras que el rock electrónico tuvo sus orígenes en los 70s con bandas experimentales,
+      el Progressive House surge en los 90s en Europa, caracterizado por su energía melódica y atmósferas envolventes.
+    </p>
+  </section>
 
-    <section id="electronica" class="card">
-      <h2>🎧 Electrónica</h2>
-      <p>La música electrónica se caracteriza por sus ritmos creados con sintetizadores y computadoras. DJs como <strong>Daft Punk</strong> y <strong>David Guetta</strong> revolucionan las pistas de baile.</p>
-      <iframe width="100%" height="315" src="https://www.youtube.com/embed/FGBhQbmPwH8" frameborder="0" allowfullscreen></iframe>
-    </section>
+  <!-- SECCIÓN ARTISTAS -->
+  <section id="artistas">
+    <h2>Artistas Destacados</h2>
+    <div class="artists">
+      <div class="artist">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/1/12/Eric_Prydz.jpg" alt="Eric Prydz">
+        <h3>Eric Prydz</h3>
+        <p>Uno de los DJs más influyentes del Progressive House, famoso por sus shows visuales impresionantes.</p>
+      </div>
+      <div class="artist">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Daft_Punk_at_Club_202_Paris_in_1997.jpg" alt="Daft Punk">
+        <h3>Daft Punk</h3>
+        <p>Pioneros del sonido electrónico con influencias de rock, responsables de hits como "One More Time".</p>
+      </div>
+      <div class="artist">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Armin_van_Buuren.jpg" alt="Armin van Buuren">
+        <h3>Armin van Buuren</h3>
+        <p>DJ holandés reconocido mundialmente por sus mezclas progresivas y trance melódico.</p>
+      </div>
+    </div>
+  </section>
 
-    <section id="progressive" class="card">
-      <h2>🔥 Progressive House</h2>
-      <p>El Progressive House está más vivo que nunca. Aquí tienes un set reciente de Eric Prydz en el Ultra Music Festival 2025:</p>
-      <iframe width="100%" height="315"
-              src="https://www.youtube.com/embed/3RKGqNKuEbc"
-              title="Eric Prydz live at Dance Arena - EXIT 2025"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; picture-in-picture"
-              allowfullscreen>
-      </iframe>
-    </section>
-  </main>
+  <!-- SECCIÓN VIDEOS -->
+  <section id="videos">
+    <h2>Videos</h2>
+    <iframe src="https://www.youtube.com/embed/mgHdpQ6yLdg" title="Eric Prydz - Live"></iframe>
+    <iframe src="https://www.youtube.com/embed/FGBhQbmPwH8" title="Daft Punk - One More Time"></iframe>
+    <iframe src="https://www.youtube.com/embed/NWdrO4BoCu8" title="Armin van Buuren - Live"></iframe>
+  </section>
 
+  <!-- SECCIÓN PLAYLIST -->
+  <section id="playlist">
+    <h2>Playlist Recomendado</h2>
+    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DX0BcQWzuB7ZO" width="100%" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+  </section>
+
+  <!-- FOOTER -->
   <footer>
-    <p>Hecho con ❤️ por [Tu Nombre] | 2025</p>
+    <p>🎧 Página creada para fans del Rock Electrónico & Progressive House | Diseñada con ❤️ en 2025</p>
+    <p><a href="https://github.com/" target="_blank" style="color:#00ffcc;">Mi GitHub</a></p>
   </footer>
+
 </body>
 </html>
+
 
 
