@@ -7,45 +7,11 @@ body {
   color: #f1f1f1;
 }
 
-/* 🔹 Menú de navegación */
-.navbar {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background: rgba(29, 29, 29, 0.95);
-  padding: 0.5rem 0;
-  z-index: 1000;
-}
-
-.navbar ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  margin: 0;
-  padding: 0;
-}
-
-.navbar li {
-  margin: 0 15px;
-}
-
-.navbar a {
-  text-decoration: none;
-  color: #f1f1f1;
-  font-weight: bold;
-  transition: color 0.3s;
-}
-
-.navbar a:hover {
-  color: #e63946;
-}
-
 header {
   background: linear-gradient(135deg, #e63946, #1d3557);
   color: white;
   text-align: center;
-  padding: 4rem 1rem 2rem;
-  margin-top: 50px; /* para que no se tape el header con el menú fijo */
+  padding: 2rem 1rem;
 }
 
 header h1 {
@@ -89,16 +55,8 @@ iframe {
 
 footer {
   text-align: center;
-  padding: 1.5rem;
+  padding: 1rem;
   background: #222;
   color: #aaa;
-}
-
-footer a {
-  color: #e63946;
-  text-decoration: none;
-}
-footer a:hover {
-  text-decoration: underline;
 }
 
