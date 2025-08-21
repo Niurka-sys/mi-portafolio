@@ -1,7 +1,55 @@
-body {
-  font-family: Arial, sans-serif;
+/* 🔹 Reset */
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+/* 🔹 Menú */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #1d1d1d;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  z-index: 1000;
+  box-shadow: 0px 2px 8px rgba(0,0,0,0.5);
+}
+
+nav .logo {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #e63946;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav ul li a {
+  color: #f1f1f1;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #e63946;
+}
+
+/* 🔹 Ajuste porque el menú es fijo */
+header, section {
+  padding-top: 80px;
+}
+
+/* 🔹 Estilo base */
+body {
+  font-family: Arial, sans-serif;
   line-height: 1.6;
   background-color: #121212;
   color: #f1f1f1;
@@ -11,7 +59,7 @@ header {
   background: linear-gradient(135deg, #e63946, #1d3557);
   color: white;
   text-align: center;
-  padding: 2rem 1rem;
+  padding: 4rem 1rem 2rem;
 }
 
 header h1 {
@@ -59,5 +107,3 @@ footer {
   background: #222;
   color: #aaa;
 }
-
-
