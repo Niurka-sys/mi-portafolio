@@ -1,87 +1,61 @@
-/* Estilos generales */
 body {
+  font-family: Arial, sans-serif;
   margin: 0;
-  font-family: 'Arial', sans-serif;
-  background-color: #111;
-  color: #f5f5f5;
+  padding: 0;
   line-height: 1.6;
+  background-color: #121212;
+  color: #f1f1f1;
 }
 
-/* Encabezado */
 header {
-  background: linear-gradient(135deg, #1db954, #111);
+  background: linear-gradient(135deg, #e63946, #1d3557);
+  color: white;
   text-align: center;
-  padding: 2rem;
+  padding: 2rem 1rem;
 }
 
 header h1 {
-  margin: 0;
   font-size: 2.5rem;
-  color: white;
 }
 
-header p {
-  font-size: 1.2rem;
-  color: #ddd;
-}
-
-/* Sección "Sobre el Proyecto" */
-.about {
-  text-align: center;
+.about, .videos, .artists {
   padding: 2rem;
+  text-align: center;
 }
 
 .about img {
-  margin-top: 1rem;
   max-width: 100%;
-  border-radius: 12px;
-  box-shadow: 0px 4px 12px rgba(0,0,0,0.6);
+  margin-top: 1rem;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.5);
 }
 
-/* Videos */
 .videos {
-  padding: 2rem;
-  text-align: center;
+  background: #1d1d1d;
 }
 
 .video-container {
-  margin: 1.5rem 0;
+  margin: 1.5rem auto;
+  max-width: 560px;
 }
 
 iframe {
-  width: 90%;
-  max-width: 560px;
-  border-radius: 12px;
-  box-shadow: 0px 4px 12px rgba(0,0,0,0.6);
-}
-
-/* Artistas */
-.artists {
-  padding: 2rem;
-  background-color: #222;
-}
-
-.artists h2 {
-  text-align: center;
-  margin-bottom: 1rem;
+  width: 100%;
+  border-radius: 10px;
 }
 
 .artists ul {
   list-style: none;
   padding: 0;
-  text-align: center;
 }
 
 .artists li {
   margin: 0.5rem 0;
 }
 
-/* Footer */
 footer {
   text-align: center;
   padding: 1rem;
-  background: #111;
-  border-top: 1px solid #333;
+  background: #222;
   color: #aaa;
-  font-size: 0.9rem;
 }
